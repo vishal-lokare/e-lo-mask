@@ -110,9 +110,23 @@ void readTempBack()
   float v2 = ( TPback / 1024) * 5 + comp - verr - shiftv; // thermopile voltage
   float objtemp = pow((v2+k*pow(ambtemp,4-delta))/k, 1/(4-delta)); // object temp
 
-  writeTemp(); 
+  writeTemp(objtemp); 
 }
 
+void writeTemp(float a)
+{
+  int b = a;
+  int i=0;
+  String c;
+  
+  while(a)
+  {
+    c[i] = (a/10) + '0';
+    i++;
+  }
+  EEPROM.write(c);
+  
+}
 
 //with addon
 void withAddOn()
