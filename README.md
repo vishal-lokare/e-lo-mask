@@ -20,3 +20,6 @@ We learned about workings of thermopile temperature sensor and learned a lot of 
 
 ### What's next for E Lo "Mask"
 We could not test it on the hardware, so the first thing would be to test on hardware and implement the smartphone app which we thought of. The app will log the data of devices nearby and temperature throughout the day and show in a chart.
+
+### Link for 3D model of the mask
+Link : https://drive.google.com/file/d/11YWs1_QAOTEs7kFEpT4_yH9zFCRM6zfu/view?usp=sharing
